@@ -259,6 +259,13 @@ winner on both axes.
 | TimeMix (post-encoding) | 61.94 | 20.42 |
 | Hole Fill (post-encoding) | 64.92 | 24.90 |
 
+## Estimated inference energy (SDT/CIFAR-100)
+
+We also examine an operation-level inference energy estimate based on spike firing rates and the 45 nm CMOS cost model used by Yao et al. (2023). These are **model-based estimates, not direct hardware measurements**. Post-encoding PatchDropout increases accuracy from **78.40% to 78.93%** while reducing estimated energy from **572.69 µJ to 568.24 µJ per image** (a **0.78% reduction**). TimeMix and PAPMix also improve baseline accuracy while lowering estimated inference energy.
+
+See the **[complete energy analysis, methodological assumptions, and results table](results/ENERGY_ANALYSIS.md)** for all SDT/CIFAR-100 methods. The energy results originate from Section 5.6 and Table 5.7 of the MSc thesis.
+
+
 ## Citation
 
 <!-- Confirm the author spelling and add a DOI or university-repository URL once
